@@ -1,0 +1,402 @@
+{
+  "name": "AI what'sApp Agent for shop",
+  "nodes": [
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.messages[0].text.body }}",
+        "options": {
+          "systemMessage": "آپ \"Hanzala Dawa Khana and Pansaar Store\" کے آفیشل AI اسسٹنٹ ہیں۔\nآپ کا کام ہر آنے والے صارف سے خلوص، نرمی اور مکمل معلومات کے ساتھ گفتگو کرنا ہے۔\nآپ صرف انہی چیزوں کے بارے میں بات کریں گے جو فائلز، شیٹس، یا دستیاب ڈیٹا میں موجود ہوں — جیسے دوا کا نام، قیمت، استعمال، روغن، جڑی بوٹیاں، حکیم کی معلومات، یا آرڈر کی تفصیل۔\n\n🌿 ابتدائی سلام اور خوش آمدید\n\nاگر صارف صرف \"Hi\", \"Hello\", \"Salam\" یا کوئی مختصر پیغام بھیجے،\nتو ہمیشہ گفتگو کا آغاز اس طرح کریں:\n\nالسلام علیکم! خوش آمدید Hanzala Dawa Khana and Pansaar Store میں۔\nکیا آپ آرڈر دینا چاہتے ہیں، معلومات حاصل کرنا چاہتے ہیں، یا پہلے سے دیا گیا آرڈر چیک کرنا ہے؟\n\n📜 عمومی ہدایات برائے گفتگو\n\nتمام گفتگو اردو زبان میں کریں۔\n\nلہجہ ہمیشہ نرم، باادب اور عوام فہم ہونا چاہیے تاکہ عام صارف آسانی سے سمجھ سکے۔\n\nہر سوال چاہے ایک لفظ کا ہو (جیسے “قیمت؟” یا “دوا؟”)، اس کا مکمل اور واضح جواب دیں۔\n\nاگر کسی سوال کا جواب فائل یا ڈیٹا میں نہ ملے تو مؤدبانہ انداز میں کہیں:\n\"اس بارے میں معلومات فی الحال دستیاب نہیں، برائے مہربانی کوئی اور سوال پوچھیں۔\"\n\nاگر سوال دوا، روغن یا نسخے سے متعلق ہو تو\n\nاس کا مکمل فائدہ، استعمال اور احتیاط مختصر الفاظ میں بیان کریں۔\n\nاگر صارف مشورہ یا علاج کے بارے میں پوچھے تو یہ ضرور ذکر کریں:\n\"مشورے کے لیے ہمارے سینئر حکیم، حکیم حافظ محمد مشتاق صاحب روزانہ شام 4 بجے سے 8 بجے تک دستیاب ہوتے ہیں۔\"\n\nاگر سوال قیمت یا ڈلیوری سے متعلق ہو تو متعلقہ شیٹ یا فائل سے معلومات لے کر واضح جواب دیں۔\n\nاگر صارف آرڈر دینا چاہے تو مؤدبانہ انداز میں یہ تفصیلات طلب کریں:\n\nکس دوا یا پروڈکٹ کا آرڈر دینا ہے؟\n\nکتنی مقدار چاہیے؟\n\nآپ کا نام اور شہر؟\n\nرابطہ نمبر یا WhatsApp؟\n\nآرڈر کنفرم ہونے پر صارف کو شکریہ ادا کریں اور کہیں:\n\"آپ کا آرڈر ریکارڈ کر لیا گیا ہے، ان شاءاللہ جلد رابطہ کیا جائے گا۔\"\n\nہر گفتگو کے آخر میں دعا یا خوش اخلاق جملہ ضرور لکھیں جیسے:\n\"اللہ آپ کو صحت و تندرستی عطا فرمائے۔\"\n\n💬 نمونہ گفتگو\n\n👤 صارف: \"Hi\"\n🤖 AI:\nالسلام علیکم! خوش آمدید Hanzala Dawa Khana and Pansaar Store میں۔\nکیا آپ آرڈر دینا چاہتے ہیں، معلومات حاصل کرنا چاہتے ہیں، یا پہلے سے دیا گیا آرڈر چیک کرنا ہے؟\n\n👤 صارف: \"کمزوری کا علاج؟\"\n🤖 AI:\nعمومی جسمانی کمزوری کے لیے \"Majoon Arad Khurma\" اور \"Sufaid Musli Powder\" بہترین ہیں۔\nیہ قدرتی اجزاء سے تیار شدہ ہیں اور طاقت و توانائی میں اضافہ کرتے ہیں۔\nاگر آپ مزید رہنمائی چاہتے ہیں تو ہمارے سینئر حکیم حکیم حافظ محمد مشتاق صاحب شام 4 بجے سے 8 بجے تک دستیاب ہوتے ہیں۔\n\n👤 صارف: \"ڈلیوری مل جاتی ہے؟\"\n🤖 AI:\nجی ہاں، لاہور میں 2 دن کے اندر ڈلیوری ہوتی ہے جبکہ پورے پاکستان میں تقریباً ایک ہفتے میں۔\nڈلیوری چارجز لاہور میں Rs.150 اور دوسرے شہروں میں Rs.250 ہیں۔\n\n👤 صارف: \"روغن بادام کی قیمت؟\"\n🤖 AI:\nخالص Rogan Badam Shirin 250ml کی بوتل Rs.600 میں دستیاب ہے۔\nیہ دماغ، نظر، اور جلد کے لیے بہترین ہے۔\n\n🧠 اضافی اصول\n\nہمیشہ تازہ فائلز کا ڈیٹا استعمال کریں۔\n\nاگر سوال غیر واضح ہو تو اندازہ لگانے کے بجائے مؤدبانہ وضاحت مانگیں۔\n\nصارف کے انداز کے باوجود ہمیشہ مثبت، نرم، اور مہذب رہیں۔\n\nگفتگو میں کبھی ذاتی یا غیر متعلقہ معلومات شامل نہ کریں۔\n\n🎯 مقصد\n\nصارف کو ایسا محسوس ہو کہ وہ کسی اصلی پنسار اسٹور میں بیٹھ کر ایک ماہر، بااخلاق اور تجربہ کار حکیم سے بات کر رہا ہے۔\n\nآپ کا مرکزی ہدف:\n\nہر سوال کا مکمل جواب دینا\n\nہر معلومات ڈیٹا سے لینا\n\nہر صارف کو خوش اخلاقی سے سہولت فراہم کرنا"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        752,
+        -128
+      ],
+      "id": "0f18c5cd-e1f1-43cf-9610-151c91a46c20",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        464,
+        96
+      ],
+      "id": "27e91789-caf6-4aea-ae59-2ab300d23bff",
+      "name": "Google Gemini Chat Model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "hgnse5I6hu3IKQwH",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $('WhatsApp Trigger').item.json.contacts[0].wa_id }}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        640,
+        112
+      ],
+      "id": "9eaa8215-230f-409a-9ec1-1a7ce6608035",
+      "name": "Simple Memory"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "161aX558nsnVfQi2Gd7mkjyBnk_pwhklcoYWM3Ytyu_U",
+          "mode": "list",
+          "cachedResultName": "AI Agent Data for Hanzala Dawa Khana and Pansaar Store",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/161aX558nsnVfQi2Gd7mkjyBnk_pwhklcoYWM3Ytyu_U/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 624220711,
+          "mode": "list",
+          "cachedResultName": "Stock",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/161aX558nsnVfQi2Gd7mkjyBnk_pwhklcoYWM3Ytyu_U/edit#gid=624220711"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheetsTool",
+      "typeVersion": 4.7,
+      "position": [
+        816,
+        96
+      ],
+      "id": "06214074-9b24-4b3a-90b5-1f1f7253ff18",
+      "name": "Get Stocks",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "Rc25bi3eUyTJUoVA",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "161aX558nsnVfQi2Gd7mkjyBnk_pwhklcoYWM3Ytyu_U",
+          "mode": "list",
+          "cachedResultName": "AI Agent Data for Hanzala Dawa Khana and Pansaar Store",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/161aX558nsnVfQi2Gd7mkjyBnk_pwhklcoYWM3Ytyu_U/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1437729770,
+          "mode": "list",
+          "cachedResultName": "FAQ's",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/161aX558nsnVfQi2Gd7mkjyBnk_pwhklcoYWM3Ytyu_U/edit#gid=1437729770"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheetsTool",
+      "typeVersion": 4.7,
+      "position": [
+        944,
+        96
+      ],
+      "id": "a3a27f20-765f-4c7e-857e-dbc574ad1a1b",
+      "name": "Get FAQ's",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "Rc25bi3eUyTJUoVA",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "updates": [
+          "messages"
+        ],
+        "options": {
+          "messageStatusUpdates": [
+            "all"
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.whatsAppTrigger",
+      "typeVersion": 1,
+      "position": [
+        336,
+        -128
+      ],
+      "id": "b54f68d2-a782-474b-83fa-6fbe072ec746",
+      "name": "WhatsApp Trigger",
+      "webhookId": "4c998f1d-5ec7-4ee7-8045-0e1f3f39251e",
+      "alwaysOutputData": false,
+      "executeOnce": false,
+      "retryOnFail": false,
+      "credentials": {
+        "whatsAppTriggerApi": {
+          "id": "zBTidN5i7rdzrQTm",
+          "name": "WhatsApp OAuth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "send",
+        "phoneNumberId": "869347362920858",
+        "recipientPhoneNumber": "923460607525",
+        "textBody": "={{ $json.output }}",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.whatsApp",
+      "typeVersion": 1.1,
+      "position": [
+        1280,
+        -128
+      ],
+      "id": "32c9a5f6-1bf0-4582-8e1d-bbcfecf8bda0",
+      "name": "Send message",
+      "webhookId": "36828449-4479-419a-8744-4b14a157453c",
+      "credentials": {
+        "whatsAppApi": {
+          "id": "F5YYfBYqvu05F29l",
+          "name": "WhatsApp account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "161aX558nsnVfQi2Gd7mkjyBnk_pwhklcoYWM3Ytyu_U",
+          "mode": "list",
+          "cachedResultName": "AI Agent Data for Hanzala Dawa Khana and Pansaar Store",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/161aX558nsnVfQi2Gd7mkjyBnk_pwhklcoYWM3Ytyu_U/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Cutomer's Data sheet",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/161aX558nsnVfQi2Gd7mkjyBnk_pwhklcoYWM3Ytyu_U/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Order Date": "=  {{ $now.format('yyyy-MM-dd hh-m-ss a') }}",
+            "Order ID": "{{ $fromAI('Order_id', $json.orders?.length + 1, 'number') }}",
+            "Customer Name": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Customer_Name', ``, 'string') }}",
+            "Contact Number": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Contact_Number', ``, 'string') }}",
+            "City": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('City', ``, 'string') }}",
+            "Delivery Address": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Delivery_Address', ``, 'string') }}",
+            "Product Name": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Product_Name', ``, 'string') }}",
+            "Quantity": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Quantity', ``, 'string') }}",
+            "Payment Method": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Payment_Method', ``, 'string') }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Order ID",
+              "displayName": "Order ID",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Customer Name",
+              "displayName": "Customer Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Contact Number",
+              "displayName": "Contact Number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "City",
+              "displayName": "City",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Delivery Address",
+              "displayName": "Delivery Address",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Product Name",
+              "displayName": "Product Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Quantity",
+              "displayName": "Quantity",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Payment Method",
+              "displayName": "Payment Method",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Order Date",
+              "displayName": "Order Date",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheetsTool",
+      "typeVersion": 4.7,
+      "position": [
+        1072,
+        96
+      ],
+      "id": "b0342702-82ad-4455-be46-f433068d2024",
+      "name": "Customer's Data sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "Rc25bi3eUyTJUoVA",
+          "name": "Google Sheets account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Stocks": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get FAQ's": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "WhatsApp Trigger": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Send message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Customer's Data sheet": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "callerPolicy": "workflowsFromSameOwner",
+    "availableInMCP": false
+  },
+  "versionId": "05847cb9-c839-428f-8d69-6ab618afd99e",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "83a40e98b9ce4f60b5c9367aa3a8b062ea6428abd2c52832ddb50b9dba76d6a1"
+  },
+  "id": "TQ8RhTdu3lMoa2KN",
+  "tags": []
+}
